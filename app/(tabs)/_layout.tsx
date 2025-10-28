@@ -1,16 +1,25 @@
 import { Tabs } from "expo-router";
 import { FontAwesome } from '@expo/vector-icons';
+import { Platform } from "react-native";
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveBackgroundColor: '#007AFF',
-        tabBarInactiveBackgroundColor: '#888',
-      }}
+        tabBarActiveBackgroundColor: '#5fa2ebff',
+        tabBarInactiveBackgroundColor: '#fbfbfbff',
+        tabBarShowLabel:false,
+        tabBarStyle:{
+          borderRadius: 20,
+          overflow: 'hidden',
+          // Optional: Add other styles like backgroundColor, elevation, etc.
+          backgroundColor: '#fff',
+          height: Platform.OS === 'ios' ? 90 : 60, // Adjust height for iOS safe area
+        },        }
+      }
     >
-      <Tabs.Screen
+      <Tabs.Screen 
         name="index"
         options={{
           title: "Home",
