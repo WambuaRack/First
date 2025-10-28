@@ -1,4 +1,4 @@
-import { StyleSheet, Text,Image, View, Alert, Button } from 'react-native';
+import { StyleSheet, Text,Image, View, Alert, Button, Linking } from 'react-native';
 
 import React from 'react';
 const logoimg =require("../../assets/images/android-icon-background.png");
@@ -15,6 +15,13 @@ export default function Index() {
         onPress={() => Alert.alert("Hello!", "You just clicked the button ")}
       />
     </View>
+     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Button
+        title="Open Google"
+        onPress={() => Linking.openURL("https://www.google.com")}
+      />
+    </View>
+    
     </View>
   );
 }
