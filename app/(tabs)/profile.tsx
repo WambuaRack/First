@@ -3,12 +3,15 @@ import React from 'react'
 
 const profile = () => {
   return (
-    <View style ={styles.container}>
-      <Text style={styles.Text}>profile</Text>
+    <View style={styles.container}>
+  <Text style={styles.Text}> Profile </Text>
+    
+    
     </View>
-  )
-}
 
+  );
+
+}
 export default profile
 
 const styles = StyleSheet.create({
@@ -21,6 +24,7 @@ const styles = StyleSheet.create({
   Text:{
     fontSize:20,
     color:"#007AFF",
-    fontWeight:600
+    fontWeight:600,
+    alignItems:"center"
   }
 })

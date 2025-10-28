@@ -1,4 +1,4 @@
-import { StyleSheet, Text,Image, View } from 'react-native';
+import { StyleSheet, Text,Image, View, Alert, Button } from 'react-native';
 
 import React from 'react';
 const logoimg =require("../../assets/images/android-icon-background.png");
@@ -7,6 +7,14 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.text}> Home Tab</Text>
       <Image source={logoimg}/>
+
+    <View style={styles.container}>
+      <Button
+        title="Click me"
+        color="#f70707ff"
+        onPress={() => Alert.alert("Hello!", "You just clicked the button ")}
+      />
+    </View>
     </View>
   );
 }
