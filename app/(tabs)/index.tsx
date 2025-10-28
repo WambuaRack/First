@@ -24,4 +24,9 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
   },
+  image:{
+    height:150,
+    width:150,
+    margin:40
+  }
 });
